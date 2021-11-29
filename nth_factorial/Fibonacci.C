@@ -10,9 +10,12 @@ int main(int argc, char* argv[])
 	if(argc < 2)
 		printf("No Command line argument passed");
 	else
-	{	
-		int n = argv[1];
-		printf("%d", fib(n));
+	{
+		for(int i=1;i<argc;i++)
+		{	
+			int n = argv[i];
+			printf("%d", fib(n));
+		}
 	}
 return 0;
 }
